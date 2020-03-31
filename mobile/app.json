@@ -24,7 +24,12 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.rocketseat.bethehero"
+    },
+    "android": {
+      "package": "com.rocketseat.bethehero"
     }
+
   }
 }
