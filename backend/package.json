@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon src/server.js",
-    "test": "cross-env NODE_ENV=test jest"
+    "test": "cross-env NODE_ENV=test jest",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "keywords": [],
   "author": "",
@@ -17,11 +19,13 @@
     "cross-env": "^7.0.2",
     "express": "^4.17.1",
     "knex": "^0.20.13",
-    "sqlite3": "^4.1.1"
+    "sqlite3": "^4.1.1",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "jest": "^25.2.4",
     "nodemon": "^2.0.2",
     "supertest": "^4.0.2"
-  }
+  },
+  "snyk": true
 }
